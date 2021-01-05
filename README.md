@@ -25,9 +25,11 @@ Social Application created to meet fellow members of similar gyms and work ethic
   Looking back on the project through out the term, majority of my app development went remarkably smoothly for a project of this size, and I believe my choice of using a graph database was a huge success for me. The main things I could have improved on would have been my graph optimization, as well as allocating more time to implement all the features I wish could have been on the app. With the potential of Gymble’s features and functionality, it could give current goers a new incentive by having friends share in your accomplishments, and potentially even create a friendly competition situation for those who have similar routines, and both push themselves to a new level. In its current state, Gymble manages to push the social aspect of reciprocation, consensus, and commitment in one’s gym experience by introducing a plethora of new users to other motivated individuals just one’s self. 
 
 References
-Marymcdme. (2019, June 9). Gymble. Retrieved from kkkkhttps://www.urbandictionary.com/define.php?term=Gymble 
-MVC: Model, View, Controller. (n.d.). Retrieved December 06, 2020, from kkkkhttps://www.codecademy.com/articles/mvc
+Marymcdme. (2019, June 9). Gymble. Retrieved from https://www.urbandictionary.com/define.php?term=Gymble 
+
+MVC: Model, View, Controller. (n.d.). Retrieved December 06, 2020, from https://www.codecademy.com/articles/mvc
 Vassileva, J. & Humu-Haida S. (2016-17) PT and Gamification
+
 Link to Demo and Survey Results
 https://drive.google.com/drive/folders/1YBTBP4pzY7PH_3kXkqsOl6KGFl1rCPpp?usp=sharing
 
