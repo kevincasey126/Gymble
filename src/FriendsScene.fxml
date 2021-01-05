@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FriendsScene">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="117.0" layoutY="122.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00bfff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="back_button" mnemonicParsing="false" onAction="#pressedBackButton" prefWidth="52.0" text="Back" />
+                  <Label alignment="CENTER" prefHeight="53.0" prefWidth="496.0" text="Friends">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="347.0" prefWidth="600.0">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="300.0">
+                     <center>
+                        <ListView fx:id="friends_list" editable="true" prefHeight="347.0" prefWidth="300.0" BorderPane.alignment="CENTER" />
+                     </center>
+                     <top>
+                        <Pane prefHeight="25.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label fx:id="no_friends" layoutX="26.0" layoutY="4.0" prefHeight="17.0" prefWidth="152.0" text="No Friends to show yet!" visible="false" />
+                           </children></Pane>
+                     </top>
+                     <left>
+                        <Pane prefHeight="200.0" prefWidth="25.0" BorderPane.alignment="CENTER" />
+                     </left>
+                     <right>
+                        <Pane prefHeight="200.0" prefWidth="25.0" BorderPane.alignment="CENTER" />
+                     </right>
+                     <bottom>
+                        <Button fx:id="request_button" mnemonicParsing="false" onAction="#pressedFriendRequestButton" text="Friend Requests\Add Friends" BorderPane.alignment="CENTER" />
+                     </bottom>
+                  </BorderPane>
+                  <BorderPane prefHeight="347.0" prefWidth="302.0">
+                     <right>
+                        <Pane prefHeight="200.0" prefWidth="25.0" BorderPane.alignment="CENTER" />
+                     </right>
+                     <bottom>
+                        <Pane prefHeight="25.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </bottom>
+                     <top>
+                        <Pane prefHeight="25.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </top>
+                     <center>
+                        <ScrollPane prefHeight="200.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+                           <content>
+                              <VBox prefHeight="495.0" prefWidth="260.0">
+                                 <children>
+                                    <ImageView fx:id="profile_pic" fitHeight="250.0" fitWidth="261.0" pickOnBounds="true" />
+                                    <TextField fx:id="name_field" editable="false" prefHeight="45.0" prefWidth="260.0">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="contact_field" editable="false" prefHeight="45.0" prefWidth="261.0" />
+                                    <TextArea fx:id="bio_field" editable="false" prefHeight="150.0" prefWidth="0.0" wrapText="true" />
+                                 </children>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

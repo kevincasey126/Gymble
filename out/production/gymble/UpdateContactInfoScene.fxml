@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00bfff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UpdateContactInfoScene">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="42.0" prefWidth="600.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#pressedBackButton" text="Back" />
+                  <Label alignment="CENTER" prefHeight="50.0" prefWidth="519.0" text="Update Contact Info">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children></HBox>
+            <HBox prefHeight="348.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="348.0" prefWidth="601.0">
+                     <children>
+                        <Pane prefHeight="28.0" prefWidth="601.0" />
+                        <HBox prefHeight="250.0" prefWidth="600.0">
+                           <children>
+                              <Pane prefHeight="250.0" prefWidth="176.0" />
+                              <TextArea fx:id="info_area" prefHeight="250.0" prefWidth="250.0" />
+                              <Pane prefHeight="200.0" prefWidth="176.0" />
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="24.0" prefWidth="601.0" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Pane prefHeight="79.0" prefWidth="212.0" />
+                              <Button mnemonicParsing="false" onAction="#pressedUpdateButton" prefHeight="50.0" prefWidth="177.0" text="Update" />
+                              <Pane prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children></HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

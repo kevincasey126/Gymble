@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00bfff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenuScene">
+   <children>
+      <BorderPane layoutX="30.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="find_people_button" mnemonicParsing="false" onAction="#pressedFindPeopleButton" prefHeight="100.0" prefWidth="225.0" text="Find People" />
+                  <Button fx:id="matches_button" mnemonicParsing="false" onAction="#pressedMatchesButton" prefHeight="100.0" prefWidth="225.0" text="Matches" GridPane.columnIndex="1" />
+                  <Button fx:id="friends_button" mnemonicParsing="false" onAction="#pressedFriendsButton" prefHeight="100.0" prefWidth="225.0" text="Friends" GridPane.rowIndex="1" />
+                  <Button fx:id="profile_button" mnemonicParsing="false" onAction="#pressedUpdateProfileButton" prefHeight="100.0" prefWidth="225.0" text="Profile Settings" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </center>
+         <top>
+            <Pane prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="100.0" prefWidth="600.0" text="Gymble">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </top>
+         <left>
+            <Pane prefHeight="200.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Pane prefHeight="200.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <Pane prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="log_out_button" layoutX="541.0" layoutY="24.0" mnemonicParsing="false" onAction="#pressedLogOutButton" text="Log Out" />
+               </children></Pane>
+         </bottom></BorderPane>
+   </children>
+</AnchorPane>

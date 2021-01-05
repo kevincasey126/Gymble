@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00bfff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UpdateBioScene">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="33.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="back_button" mnemonicParsing="false" onAction="#pressedBackButton" text="Back" />
+                  <Label alignment="CENTER" prefWidth="519.0" text="Update Bio">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox prefHeight="351.0" prefWidth="600.0">
+               <children>
+                  <Pane prefHeight="15.0" prefWidth="600.0" />
+                  <HBox prefHeight="250.0" prefWidth="600.0">
+                     <children>
+                        <Pane prefHeight="250.0" prefWidth="176.0" />
+                        <TextArea fx:id="bio_area" prefHeight="250.0" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="25.0" prefWidth="600.0" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="212.5" />
+                        <Button fx:id="update_button" alignment="CENTER" mnemonicParsing="false" onAction="#pressedUpdateBioButton" prefHeight="50.0" prefWidth="177.0" text="Update" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

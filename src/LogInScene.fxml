@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00BFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LogInScene">
+   <children>
+      <HBox prefHeight="400.0" prefWidth="600.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#pressedBackButton" prefHeight="25.0" prefWidth="60.0" text="Back" />
+            <Pane prefHeight="400.0" prefWidth="140.0" />
+            <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="200.0">
+               <children>
+                  <Label text="Gymble">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="57.0" prefWidth="193.0" />
+                  <TextField fx:id="username_input" onAction="#pressedLogInButton" prefHeight="41.0" prefWidth="486.0" />
+                  <Label opacity="0.5" prefHeight="17.0" prefWidth="191.0" text="username" />
+                  <Pane prefHeight="39.0" prefWidth="193.0" />
+                  <PasswordField fx:id="password_input" prefHeight="45.0" prefWidth="193.0" />
+                  <Label opacity="0.5" prefHeight="17.0" prefWidth="210.0" text="password" />
+                  <Label fx:id="error_code" prefHeight="17.0" prefWidth="215.0" text="Username or Password incorrect" textFill="#eb1515" visible="false" />
+                  <Pane prefHeight="28.0" prefWidth="193.0" />
+                  <Button mnemonicParsing="false" onAction="#pressedLogInButton" prefHeight="51.0" prefWidth="87.0" text="Log In" />
+                  <Pane prefHeight="83.0" prefWidth="193.0">
+                     <children>
+                        <TextFlow layoutX="-21.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <Pane prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #00BFFF;" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00bfff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UpdateProfilePicScene">
+   <children>
+      <VBox layoutX="89.0" layoutY="27.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="45.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="back_button" mnemonicParsing="false" onAction="#pressedBackButton" text="Back" />
+                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="519.0" text="Update Profile Picture">
+                     <font>
+                        <Font size="36.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="349.0" prefWidth="600.0">
+               <children>
+                  <GridPane alignment="CENTER" prefHeight="348.0" prefWidth="601.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="browse_button" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#pressedBrowseButton" text="Browse for Picture">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <ImageView fx:id="profile_pic" fitHeight="250.0" fitWidth="260.0" pickOnBounds="true" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

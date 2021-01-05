@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00bfff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FindPeopleScene">
+   <children>
+      <VBox layoutX="209.0" layoutY="54.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="back_button" mnemonicParsing="false" onAction="#pressedBackButton" text="Back" />
+                  <Label alignment="CENTER" prefHeight="53.0" prefWidth="519.0" text="Find People">
+                     <font>
+                        <Font size="36.0" />
+                     </font></Label>
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="346.0" prefWidth="600.0">
+               <children>
+                  <Pane prefHeight="346.0" prefWidth="0.0" />
+                  <Button mnemonicParsing="false" onAction="#pressedNoButton" text="No" />
+                  <BorderPane prefHeight="250.0" prefWidth="325.0">
+                     <top>
+                        <Pane prefHeight="25.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label fx:id="no_pms" layoutX="24.0" prefHeight="25.0" prefWidth="245.0" text="No new people to find! Check back later!" visible="false" />
+                           </children></Pane>
+                     </top>
+                     <left>
+                        <Pane prefHeight="200.0" prefWidth="25.0" BorderPane.alignment="CENTER" />
+                     </left>
+                     <right>
+                        <Pane prefHeight="200.0" prefWidth="25.0" BorderPane.alignment="CENTER" />
+                     </right>
+                     <bottom>
+                        <Pane prefHeight="25.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </bottom>
+                     <center>
+                        <ScrollPane prefHeight="450.0" prefWidth="260.0" BorderPane.alignment="CENTER">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="450.0" prefWidth="260.0">
+                                 <children>
+                                    <VBox prefHeight="450.0" prefWidth="260.0">
+                                       <children>
+                                          <ImageView fx:id="profile_pic" fitHeight="250.0" fitWidth="260.0" pickOnBounds="true" />
+                                          <TextField fx:id="name_field" editable="false" prefHeight="45.0">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font></TextField>
+                                          <TextArea fx:id="bio_field" editable="false" prefHeight="158.0" prefWidth="260.0" />
+                                       </children></VBox>
+                                 </children></AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </center>
+                  </BorderPane>
+                  <Button mnemonicParsing="false" onAction="#pressedYesButton" text="Yes" />
+                  <Pane prefHeight="346.0" prefWidth="0.0" />
+               </children></HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
