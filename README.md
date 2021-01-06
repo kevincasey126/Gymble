@@ -1,6 +1,19 @@
 # Gymble
 Social Application created to meet fellow members of similar gyms and work ethics
 
+# Compilation Instructions:
+
+NOTE: Servers are no longer active and application requires log in to use
+
+Libraries used (libraries were acquired through the built-in Maven search in IntelliJ):
+
+com.amazonaws:aws-java-sdk-s3:1.11.43
+com.guicedee.services:jakarta.xml.bind-api:62
+org.neo4j.driver:neo4j-java-driver:4.1.1
+JUnit 5
+Ensure JavaFX is installed, and in the VM Options in Run>Edit Configurations in IntelliJ, put --module-path "C:\Path to JavaFX\lib" --add-modules javafx.controls,javafx.fxml JavaFX must also be a library in the Project Structure. To set this library open File>Project Structure>Libraries, then with the little "+" sign, add a library from Java which will you will find under your Path to JavaFX\lib
+To compile from the source, you must install the libraries above in IntelliJ. Add the moviecache and placeholder image to your out/production folder in your project. From there it should run in IntelliJ, if you want to pack it into a JAR you must follow this workaround to package the JavaFX.
+
 ## Description
    If anyone else is like me, getting the motivation to go to the gym is a tall task, even before the workout has begun. A large factor that pushed me to get to the gym was a social aspect of being able to workout with a group of friends. The gym no longer becomes a spot just to get physically fit, but to socialize and drive each other to do the best we can. Creating an application that can connect people that are looking to get the motivation to hit the gyms by using social aspects of having compatible friends and groups could lead to a large motivation boost for those struggling to get started. 
   
