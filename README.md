@@ -1,7 +1,7 @@
 # Gymble
 Social Application created to meet fellow members of similar gyms and work ethics
 
-# Compilation Instructions:
+## Compilation Instructions:
 
 NOTE: Servers are no longer active and application requires log in to use
 
